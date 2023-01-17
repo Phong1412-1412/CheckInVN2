@@ -18,6 +18,7 @@ struct ContentView: View {
                     user in
                     HStack {
                         Text(user.userName)
+                        Text(String(user.userPassWord))
                     }
                 }
             }

@@ -11,4 +11,5 @@ struct User: Hashable, Codable {
     let userID: Int
     let userName: String
     let userEmail: String
+    let userPassWord: Int
 }

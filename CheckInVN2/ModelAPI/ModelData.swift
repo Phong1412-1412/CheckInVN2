@@ -9,9 +9,10 @@ import Foundation
 
 class UserViewModel: ObservableObject {
     @Published var users: [User] = []
+    @Published var provinces: [Province] = []
     var ipAPI = "192.168.1.5"
     func fetch() {
-        guard let url = URL(string: "http://192.168.1.5/landmark_api/api/UserAPI/read_user.php") else {
+        guard let url = URL(string: "http://\(ipAPI)/landmark_api/api/UserAPI/read_user.php") else {
             return
         }
         let task = URLSession.shared.dataTask(with: url) {[weak self] data, _,error in
@@ -22,6 +23,27 @@ class UserViewModel: ObservableObject {
                 let users = try JSONDecoder().decode([User].self, from: data)
                 DispatchQueue.main.async {
                     self?.users = users
+                }
+            }
+            catch {
+                print(error)
+            }
+        }
+        task.resume()
+    }
+    
+    func fetchProvince() {
+        guard let url = URL(string: "http://\(ipAPI)/landmark_api/api/provinceAPI/read_province.php") else {
+            return
+        }
+        let task = URLSession.shared.dataTask(with: url) {[weak self] data, _,error in
+            guard let data = data, error == nil else {
+                return
+            }
+            do {
+                let provinces = try JSONDecoder().decode([Province].self, from: data)
+                DispatchQueue.main.async {
+                    self?.provinces = provinces
                 }
             }
             catch {
