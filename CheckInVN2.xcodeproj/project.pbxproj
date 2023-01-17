@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55648BCA29769473006A49D7 /* CLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55648BC929769473006A49D7 /* CLUser.swift */; };
+		55648BCC2976953A006A49D7 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55648BCB2976953A006A49D7 /* ModelData.swift */; };
 		5568069129730235004DD500 /* CheckInVN2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5568069029730235004DD500 /* CheckInVN2App.swift */; };
 		5568069329730235004DD500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5568069229730235004DD500 /* ContentView.swift */; };
 		5568069529730237004DD500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5568069429730237004DD500 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55648BC929769473006A49D7 /* CLUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLUser.swift; sourceTree = "<group>"; };
+		55648BCB2976953A006A49D7 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		5568068D29730235004DD500 /* CheckInVN2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInVN2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5568069029730235004DD500 /* CheckInVN2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVN2App.swift; sourceTree = "<group>"; };
 		5568069229730235004DD500 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55648BC82976944E006A49D7 /* ModelAPI */ = {
+			isa = PBXGroup;
+			children = (
+				55648BC929769473006A49D7 /* CLUser.swift */,
+				55648BCB2976953A006A49D7 /* ModelData.swift */,
+			);
+			path = ModelAPI;
+			sourceTree = "<group>";
+		};
 		5568068429730235004DD500 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +108,7 @@
 		5568068F29730235004DD500 /* CheckInVN2 */ = {
 			isa = PBXGroup;
 			children = (
+				55648BC82976944E006A49D7 /* ModelAPI */,
 				5568069029730235004DD500 /* CheckInVN2App.swift */,
 				5568069229730235004DD500 /* ContentView.swift */,
 				5568069429730237004DD500 /* Assets.xcassets */,
@@ -260,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5568069329730235004DD500 /* ContentView.swift in Sources */,
+				55648BCC2976953A006A49D7 /* ModelData.swift in Sources */,
+				55648BCA29769473006A49D7 /* CLUser.swift in Sources */,
 				5568069129730235004DD500 /* CheckInVN2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

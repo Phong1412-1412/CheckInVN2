@@ -8,12 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var userModel = UserViewModel()
+    
     var body: some View {
-        Text("Hello, Khánh!")
-            .padding()
+        NavigationView {
+            List {
+                ForEach(userModel.users, id:\.userID)
+                {
+                    user in
+                    HStack {
+                        Text(user.userName)
+                    }
+                }
+            }
+            .navigationTitle("User")
+            .onAppear{
+                userModel.fetch()
+            }
+        }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
