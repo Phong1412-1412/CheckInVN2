@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5563B0C329777763007616A6 /* ProvinceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5563B0C229777763007616A6 /* ProvinceRow.swift */; };
 		55648BCA29769473006A49D7 /* CLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55648BC929769473006A49D7 /* CLUser.swift */; };
 		55648BCC2976953A006A49D7 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55648BCB2976953A006A49D7 /* ModelData.swift */; };
 		556572622976C38D00E9E08C /* CLProvince.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556572612976C38D00E9E08C /* CLProvince.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5563B0C229777763007616A6 /* ProvinceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceRow.swift; sourceTree = "<group>"; };
 		55648BC929769473006A49D7 /* CLUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLUser.swift; sourceTree = "<group>"; };
 		55648BCB2976953A006A49D7 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		556572612976C38D00E9E08C /* CLProvince.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLProvince.swift; sourceTree = "<group>"; };
@@ -95,6 +97,8 @@
 			children = (
 				5568069229730235004DD500 /* ContentView.swift */,
 				556572642976C49F00E9E08C /* ProvinceView.swift */,
+				5563B0C229777763007616A6 /* ProvinceRow.swift */,
+				55648BC82976944E006A49D7 /* ModelAPI */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +293,7 @@
 			files = (
 				5568069329730235004DD500 /* ContentView.swift in Sources */,
 				55648BCC2976953A006A49D7 /* ModelData.swift in Sources */,
+				5563B0C329777763007616A6 /* ProvinceRow.swift in Sources */,
 				55648BCA29769473006A49D7 /* CLUser.swift in Sources */,
 				5568069129730235004DD500 /* CheckInVN2App.swift in Sources */,
 				556572652976C49F00E9E08C /* ProvinceView.swift in Sources */,
