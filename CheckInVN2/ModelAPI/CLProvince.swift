@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Province: Hashable, Codable {
     let id: Int
@@ -13,4 +14,8 @@ struct Province: Hashable, Codable {
     let description: String
     let image: String
     let favoriteChecked: Int
+    
+    var imageA: Image{
+        Image(image)
+    }
 }
