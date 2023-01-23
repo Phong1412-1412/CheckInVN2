@@ -8,25 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var userModel = UserViewModel()
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(userModel.users, id:\.userID)
-                {
-                    user in
-                    HStack {
-                        Text(user.userName)
-                        Text(String(user.userPassWord))
-                    }
-                }
-            }
-            .navigationTitle("User")
-            .onAppear{
-                userModel.fetch()
+        VStack(alignment: .leading) {
+            Text("Turtle Rook")
+                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            HStack {
+                Text("Joshua Tree National Park")
+                .font(.subheadline)
+                 Spacer()
+                Text("California")
+                .font(.subheadline)
             }
         }
+        .padding()
     }
 }
 struct ContentView_Previews: PreviewProvider {

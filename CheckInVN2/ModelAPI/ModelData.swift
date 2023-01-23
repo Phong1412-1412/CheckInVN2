@@ -10,7 +10,7 @@ import Foundation
 class UserViewModel: ObservableObject {
     @Published var users: [User] = []
     @Published var provinces: [Province] = []
-    var ipAPI = "192.168.1.5"
+    var ipAPI = "192.168.1.8"
     func fetch() {
         guard let url = URL(string: "http://\(ipAPI)/landmark_api/api/UserAPI/read_user.php") else {
             return
