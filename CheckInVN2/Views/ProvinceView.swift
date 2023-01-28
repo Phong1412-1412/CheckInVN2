@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProvinceView: View {
-    @StateObject var provinceModel = UserViewModel()
+    @StateObject var provinceModel = ViewModel()
     var body: some View {
         NavigationView{
             List{

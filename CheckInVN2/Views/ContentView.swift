@@ -10,18 +10,31 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Turtle Rook")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            HStack {
-                Text("Joshua Tree National Park")
-                .font(.subheadline)
-                 Spacer()
-                Text("California")
-                .font(.subheadline)
+        VStack{
+            MapView()
+                .frame(height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            CircleImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
+            VStack(alignment: .leading) {
+                Text("Turtle Rook")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                HStack {
+                    Text("Joshua Tree National Park")
+                    .font(.subheadline)
+                     Spacer()
+                    Text("California")
+                    .font(.subheadline)
+                    
+                }
+                Divider()
+                Text("About Turtle Rock")
+                            .font(.title2)
+                Text("Descriptive text goes here.")
             }
+            .padding()
+            Spacer()
         }
-        .padding()
     }
 }
 struct ContentView_Previews: PreviewProvider {

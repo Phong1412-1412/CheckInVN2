@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserListView: View {
-    @StateObject var userModel = UserViewModel()
+    @StateObject var userModel = ViewModel()
     
     var body: some View {
         NavigationView {
@@ -24,7 +24,7 @@ struct UserListView: View {
             }
             .navigationTitle("User")
             .onAppear{
-                userModel.fetch()
+                userModel.fetchUser()
             }
         }
     }

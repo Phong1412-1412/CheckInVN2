@@ -11,7 +11,7 @@ import SwiftUI
 struct CheckInVN2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProvinceRow()
         }
     }
 }

@@ -12,6 +12,8 @@
 		55648BCC2976953A006A49D7 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55648BCB2976953A006A49D7 /* ModelData.swift */; };
 		556572622976C38D00E9E08C /* CLProvince.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556572612976C38D00E9E08C /* CLProvince.swift */; };
 		556572652976C49F00E9E08C /* ProvinceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556572642976C49F00E9E08C /* ProvinceView.swift */; };
+		5566DF3D298512D3009E9C0C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566DF3C298512D3009E9C0C /* MapView.swift */; };
+		5566DF4129851B93009E9C0C /* CLFamous.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5566DF4029851B93009E9C0C /* CLFamous.swift */; };
 		5568069129730235004DD500 /* CheckInVN2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5568069029730235004DD500 /* CheckInVN2App.swift */; };
 		5568069329730235004DD500 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5568069229730235004DD500 /* ContentView.swift */; };
 		5568069529730237004DD500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5568069429730237004DD500 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		55648BCB2976953A006A49D7 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		556572612976C38D00E9E08C /* CLProvince.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLProvince.swift; sourceTree = "<group>"; };
 		556572642976C49F00E9E08C /* ProvinceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceView.swift; sourceTree = "<group>"; };
+		5566DF3C298512D3009E9C0C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5566DF4029851B93009E9C0C /* CLFamous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLFamous.swift; sourceTree = "<group>"; };
 		5568068D29730235004DD500 /* CheckInVN2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInVN2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5568069029730235004DD500 /* CheckInVN2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVN2App.swift; sourceTree = "<group>"; };
 		5568069229730235004DD500 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				55648BC929769473006A49D7 /* CLUser.swift */,
 				55648BCB2976953A006A49D7 /* ModelData.swift */,
 				556572612976C38D00E9E08C /* CLProvince.swift */,
+				5566DF4029851B93009E9C0C /* CLFamous.swift */,
 			);
 			path = ModelAPI;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 				5563B0C229777763007616A6 /* ProvinceRow.swift */,
 				556C5608297EE8E6009F0737 /* UserListView.swift */,
 				556C560A297EEA7F009F0737 /* CircleImage.swift */,
+				5566DF3C298512D3009E9C0C /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,7 +308,9 @@
 				556C5609297EE8E6009F0737 /* UserListView.swift in Sources */,
 				55648BCA29769473006A49D7 /* CLUser.swift in Sources */,
 				556C560B297EEA7F009F0737 /* CircleImage.swift in Sources */,
+				5566DF4129851B93009E9C0C /* CLFamous.swift in Sources */,
 				5568069129730235004DD500 /* CheckInVN2App.swift in Sources */,
+				5566DF3D298512D3009E9C0C /* MapView.swift in Sources */,
 				556572652976C49F00E9E08C /* ProvinceView.swift in Sources */,
 				556572622976C38D00E9E08C /* CLProvince.swift in Sources */,
 			);
