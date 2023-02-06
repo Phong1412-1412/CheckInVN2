@@ -15,11 +15,14 @@ struct ProvinceView: View {
                 ForEach(provinceModel.provinces, id: \.self) {
                     province in
                     HStack {
+                        province.imageA
+                            .resizable()
+                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         Text(province.provinceName)
                     }
                 }
             }
-            .navigationTitle("Province")
+            .navigationTitle("Tỉnh Thành")
             .onAppear {
                 provinceModel.fetchProvince()
             }

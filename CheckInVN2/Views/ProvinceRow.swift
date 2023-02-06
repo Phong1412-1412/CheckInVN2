@@ -15,13 +15,15 @@ struct ProvinceRow: View {
                     ForEach(FamousModel.coorFamous, id:\.id)
                     {
                         famous in
-                        HStack {
+                        VStack {
+                            famous.imageName
+                                .resizable()
                             Text(famous.name)
               
                         }
                     }
                 }
-                .navigationTitle("FamousPlace")
+                .navigationTitle("Địa Danh")
                 .onAppear{
                     FamousModel.fetchFamous()
                 }

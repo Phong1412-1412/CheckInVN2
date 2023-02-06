@@ -11,7 +11,7 @@ class ViewModel: ObservableObject {
     @Published var users: [User] = []
     @Published var provinces: [Province] = []
     @Published var coorFamous: [Famous] = []
-    var ipAPI = "192.168.1.10"
+    var ipAPI = "192.168.1.16"
     func fetchUser() {
         guard let url = URL(string: "http://\(ipAPI)/landmark_api/api/UserAPI/read_user.php") else {
             return
