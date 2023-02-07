@@ -22,6 +22,7 @@
 		556806AE29730238004DD500 /* CheckInVN2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556806AD29730238004DD500 /* CheckInVN2UITests.swift */; };
 		556C5609297EE8E6009F0737 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C5608297EE8E6009F0737 /* UserListView.swift */; };
 		556C560B297EEA7F009F0737 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C560A297EEA7F009F0737 /* CircleImage.swift */; };
+		55AD5F7B2990894B00669E6B /* FamousPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AD5F7A2990894B00669E6B /* FamousPlace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		556806AF29730238004DD500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556C5608297EE8E6009F0737 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		556C560A297EEA7F009F0737 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		55AD5F7A2990894B00669E6B /* FamousPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamousPlace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				556C5608297EE8E6009F0737 /* UserListView.swift */,
 				556C560A297EEA7F009F0737 /* CircleImage.swift */,
 				5566DF3C298512D3009E9C0C /* MapView.swift */,
+				55AD5F7A2990894B00669E6B /* FamousPlace.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				55648BCC2976953A006A49D7 /* ModelData.swift in Sources */,
 				5563B0C329777763007616A6 /* ProvinceRow.swift in Sources */,
 				556C5609297EE8E6009F0737 /* UserListView.swift in Sources */,
+				55AD5F7B2990894B00669E6B /* FamousPlace.swift in Sources */,
 				55648BCA29769473006A49D7 /* CLUser.swift in Sources */,
 				556C560B297EEA7F009F0737 /* CircleImage.swift in Sources */,
 				5566DF4129851B93009E9C0C /* CLFamous.swift in Sources */,

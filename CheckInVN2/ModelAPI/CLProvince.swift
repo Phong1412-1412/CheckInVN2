@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Province: Hashable, Codable {
+struct Province: Hashable, Codable, Identifiable  {
     let id: Int
     let provinceName: String
     let description: String

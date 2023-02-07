@@ -11,18 +11,22 @@ struct ProvinceView: View {
     @StateObject var provinceModel = ViewModel()
     var body: some View {
         NavigationView{
-            List{
-                ForEach(provinceModel.provinces, id: \.self) {
-                    province in
-                    HStack {
-                        province.imageA
-                            .resizable()
-                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        Text(province.provinceName)
+            List(provinceModel.provinces, id: \.self) {
+                province in
+                NavigationLink(
+                    destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                    isActive: .constant(false),
+                    label: {
+                        HStack{
+                            province.imageA
+                                .resizable()
+                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            Text(province.provinceName)
+                        }
                     }
-                }
+                )
             }
-            .navigationTitle("Tỉnh Thành")
+            .navigationTitle("Tỉnh Thanh")
             .onAppear {
                 provinceModel.fetchProvince()
             }

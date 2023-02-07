@@ -8,26 +8,9 @@
 import SwiftUI
 
 struct ProvinceRow: View {
-    @StateObject var FamousModel = ViewModel()
+    @StateObject var viewModel = ViewModel()
         var body: some View {
-            NavigationView {
-                List {
-                    ForEach(FamousModel.coorFamous, id:\.id)
-                    {
-                        famous in
-                        VStack {
-                            famous.imageName
-                                .resizable()
-                            Text(famous.name)
-              
-                        }
-                    }
-                }
-                .navigationTitle("Địa Danh")
-                .onAppear{
-                    FamousModel.fetchFamous()
-                }
-            }
+           Text("")
     }
 }
 

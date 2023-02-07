@@ -1,0 +1,38 @@
+//
+//  ProvinceRow.swift
+//  CheckInVN2
+//
+//  Created by PPPP on 17/01/2023.
+//
+
+import SwiftUI
+
+struct FamousPlace: View {
+    @StateObject var FamousModel = ViewModel()
+        var body: some View {
+            NavigationView {
+                List {
+                    ForEach(FamousModel.coorFamous, id:\.id)
+                    {
+                        famous in
+                        VStack {
+                            famous.imageName
+                                .resizable()
+                            Text(famous.name)
+              
+                        }
+                    }
+                }
+                .navigationTitle("Địa Danh")
+                .onAppear{
+                    FamousModel.fetchFamous()
+                }
+            }
+    }
+}
+
+struct FamousPlace_Previews: PreviewProvider {
+    static var previews: some View {
+        ProvinceRow()
+    }
+}
