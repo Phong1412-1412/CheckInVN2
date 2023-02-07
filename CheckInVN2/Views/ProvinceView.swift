@@ -14,8 +14,7 @@ struct ProvinceView: View {
             List(provinceModel.provinces, id: \.self) {
                 province in
                 NavigationLink(
-                    destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
-                    isActive: .constant(false),
+                    destination: ContentView(),
                     label: {
                         HStack{
                             province.imageA
@@ -26,7 +25,7 @@ struct ProvinceView: View {
                     }
                 )
             }
-            .navigationTitle("Tỉnh Thanh")
+            .navigationTitle("Tỉnh Thành")
             .onAppear {
                 provinceModel.fetchProvince()
             }

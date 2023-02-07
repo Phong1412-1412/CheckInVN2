@@ -77,6 +77,34 @@ class ViewModel: ObservableObject {
         task.resume()
     }
 
+    func fetchFamousPost(with id_province: Int) {
+        guard let url = URL(string: "http://\(ipAPI)/landmark_api/api/FamousPlaceAPI/read_coorFamous.php") else {
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+
+        let parameters = ["id_province": id_province]
+        request.httpBody = parameters.map { "\($0)=\($1)" }
+            .joined(separator: "&")
+            .data(using: .utf8)
+
+        let task = URLSession.shared.dataTask(with: request) {[weak self] data, _,error in
+            guard let data = data, error == nil else {
+                return
+            }
+            do {
+                let coorFamous = try JSONDecoder().decode([Famous].self, from: data)
+                DispatchQueue.main.async {
+                    self?.coorFamous = coorFamous
+                }
+            }
+            catch {
+                print(error)
+            }
+        }
+        task.resume()
+    }
 }
 
 

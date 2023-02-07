@@ -17,18 +17,18 @@ struct ContentView: View {
                 .offset(y: -130)
                 .padding(.bottom, -130)
             VStack(alignment: .leading) {
-                Text("Turtle Rook")
+                Text("An Giang")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 HStack {
-                    Text("Joshua Tree National Park")
+                    Text("AN")
                     .font(.subheadline)
                      Spacer()
-                    Text("California")
+                    Text("Viet Nam")
                     .font(.subheadline)
                     
                 }
                 Divider()
-                Text("About Turtle Rock")
+                Text("Giới thiệu: An Giang")
                             .font(.title2)
                 Text("Descriptive text goes here.")
             }
