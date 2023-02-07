@@ -11,25 +11,28 @@ struct ProvinceView: View {
     @StateObject var provinceModel = ViewModel()
     var body: some View {
         NavigationView{
-            List(provinceModel.provinces, id: \.self) {
-                province in
-                NavigationLink(
-                    destination: ContentView(),
-                    label: {
+            List {
+                ForEach(provinceModel.provinces, id: \.id) { province in
+                    Button(action: {
+                        // Gửi POST request với id của tỉnh được chọn
+                        provinceModel.fetchFamousPost(with: province.id)
+                    }) {
                         HStack{
                             province.imageA
                                 .resizable()
-                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .center)
                             Text(province.provinceName)
                         }
+                        
                     }
-                )
+                }
             }
             .navigationTitle("Tỉnh Thành")
-            .onAppear {
+            .onAppear{
                 provinceModel.fetchProvince()
             }
         }
+       
     }
 }
 
