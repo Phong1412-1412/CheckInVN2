@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ProvinceView: View {
     @StateObject var provinceModel = ViewModel()
+    @State private var selectedProvinceId: Int?
+    
     var body: some View {
         NavigationView{
             List {
                 ForEach(provinceModel.provinces, id: \.id) { province in
                     Button(action: {
-                        // Gửi POST request với id của tỉnh được chọn
                         provinceModel.fetchFamousPost(with: province.id)
                     }) {
                         HStack{
@@ -27,7 +28,7 @@ struct ProvinceView: View {
                     }
                 }
             }
-            .navigationTitle("Tỉnh Thành")
+            .navigationBarTitle("Tỉnh Thành")
             .onAppear{
                 provinceModel.fetchProvince()
             }

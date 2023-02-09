@@ -15,13 +15,19 @@ struct FamousPlace: View {
                     ForEach(FamousModel.coorFamous, id:\.id)
                     {
                         famous in
-                        VStack {
-                            famous.imageName
-                                .resizable()
-                            Text(famous.name)
-              
-                        }
+                        NavigationLink(
+                            destination: FamousPlaceDetail(),
+                            label: {
+                                HStack {
+                                    famous.imageName
+                                        .resizable()
+                                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                                    Text(famous.name)
+                      
+                                }
+                            })
                     }
+                    
                 }
                 .navigationTitle("Địa Danh")
                 .onAppear{
@@ -33,6 +39,6 @@ struct FamousPlace: View {
 
 struct FamousPlace_Previews: PreviewProvider {
     static var previews: some View {
-        ProvinceRow()
+        FamousPlace()
     }
 }

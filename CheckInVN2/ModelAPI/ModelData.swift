@@ -11,8 +11,10 @@ class ViewModel: ObservableObject {
     @Published var users: [User] = []
     @Published var provinces: [Province] = []
     @Published var coorFamous: [Famous] = []
+    @Published var placeIdProvince: [Famous] = []
+    
 
-    var ipAPI = "192.168.1.5"
+    var ipAPI = "192.168.43.177"
     func fetchUser() {
         guard let url = URL(string: "http://\(ipAPI)/landmark_api/api/UserAPI/read_user.php") else {
             return
@@ -83,7 +85,8 @@ class ViewModel: ObservableObject {
         }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
         let parameters = ["id_province": id_province]
         request.httpBody = parameters.map { "\($0)=\($1)" }
             .joined(separator: "&")
@@ -94,9 +97,10 @@ class ViewModel: ObservableObject {
                 return
             }
             do {
-                let coorFamous = try JSONDecoder().decode([Famous].self, from: data)
+                let placeIdProvince = try JSONDecoder().decode([Famous].self, from: data)
                 DispatchQueue.main.async {
-                    self?.coorFamous = coorFamous
+                    self?.placeIdProvince = placeIdProvince
+                    print(placeIdProvince)
                 }
             }
             catch {
