@@ -16,7 +16,7 @@ struct FamousPlace: View {
                     {
                         famous in
                         NavigationLink(
-                            destination: FamousPlaceDetail(),
+                            destination: FamousPlaceDetail(famousPlace: famous),
                             label: {
                                 HStack {
                                     famous.imageName
