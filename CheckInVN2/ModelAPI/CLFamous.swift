@@ -27,8 +27,19 @@ struct Famous: Hashable, Codable {
                latitude: coordinates.latitude,
                longitude: coordinates.longitude)
     }
-
-    struct Coordinates: Hashable, Codable {
+    
+    init(id: Int, id_provice: Int, name: String, description: String, image: String, ischecked: Int, coordinates: Coordinates) {
+        self.id = id
+        self.id_province = id
+        self.name = name
+        self.description = description
+        self.image = image
+        self.ischecked = ischecked
+        self.coordinates = coordinates
+    }
+    
+    
+     struct Coordinates: Hashable, Codable {
         var latitude: Double
         var longitude: Double
     }
