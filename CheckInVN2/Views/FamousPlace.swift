@@ -9,10 +9,11 @@ import SwiftUI
 
 struct FamousPlace: View {
     @StateObject var FamousModel = ViewModel()
+    var id_province: Int
         var body: some View {
             NavigationView {
                 List {
-                    ForEach(FamousModel.coorFamous, id:\.id)
+                    ForEach(FamousModel.placeIdProvince , id:\.id)
                     {
                         famous in
                         NavigationLink(
@@ -31,7 +32,7 @@ struct FamousPlace: View {
                 }
                 .navigationTitle("Địa Danh")
                 .onAppear{
-                    FamousModel.fetchFamous()
+                    FamousModel.fetchFamousPost(with: id_province)
                 }
             }
     }
@@ -39,6 +40,7 @@ struct FamousPlace: View {
 
 struct FamousPlace_Previews: PreviewProvider {
     static var previews: some View {
-        FamousPlace()
+        FamousPlace(id_province: 1)
     }
 }
+

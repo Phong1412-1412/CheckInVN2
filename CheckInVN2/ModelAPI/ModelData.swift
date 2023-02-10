@@ -80,7 +80,7 @@ class ViewModel: ObservableObject {
     }
 
     func fetchFamousPost(with id_province: Int) {
-        guard let url = URL(string: "http://\(ipAPI)/landmark_api/api/FamousPlaceAPI/read_coorFamous.php") else {
+        guard let url = URL(string: "http://\(ipAPI)/landmark_api/api/FamousPlaceAPI/read_coorFamous.php/?id_province=\(id_province)") else {
             return
         }
         var request = URLRequest(url: url)

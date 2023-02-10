@@ -15,17 +15,17 @@ struct ProvinceView: View {
         NavigationView{
             List {
                 ForEach(provinceModel.provinces, id: \.id) { province in
-                    Button(action: {
-                        provinceModel.fetchFamousPost(with: province.id)
-                    }) {
-                        HStack{
-                            province.imageA
-                                .resizable()
-                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .center)
-                            Text(province.provinceName)
-                        }
-                        
-                    }
+                    NavigationLink(
+                        destination: FamousPlace(id_province: province.id),
+                        label: {
+                            HStack{
+                                province.imageA
+                                    .resizable()
+                                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .center)
+                                Text(province.provinceName)
+                            }
+                            
+                        })
                 }
             }
             .navigationBarTitle("Tỉnh Thành")
