@@ -28,12 +28,12 @@ struct ProvinceView: View {
                         })
                 }
             }
-            .navigationBarTitle("Tỉnh Thành")
+            .navigationTitle("Tỉnh Thành")
             .onAppear{
                 provinceModel.fetchProvince()
             }
         }
-       
+        
     }
 }
 

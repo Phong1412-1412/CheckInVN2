@@ -35,6 +35,8 @@ struct FamousPlace: View {
                     FamousModel.fetchFamousPost(with: id_province)
                 }
             }
+            
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 
