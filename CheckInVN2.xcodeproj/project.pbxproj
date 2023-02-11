@@ -19,6 +19,7 @@
 		5568069829730237004DD500 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5568069729730237004DD500 /* Preview Assets.xcassets */; };
 		556806A329730238004DD500 /* CheckInVN2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556806A229730238004DD500 /* CheckInVN2Tests.swift */; };
 		556806AE29730238004DD500 /* CheckInVN2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556806AD29730238004DD500 /* CheckInVN2UITests.swift */; };
+		55697C9B29979C7800DD2F25 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55697C9A29979C7800DD2F25 /* HomePage.swift */; };
 		556C5609297EE8E6009F0737 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C5608297EE8E6009F0737 /* UserListView.swift */; };
 		556C560B297EEA7F009F0737 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C560A297EEA7F009F0737 /* CircleImage.swift */; };
 		557E2FD62994ED8E009A3062 /* FamousPlaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E2FD52994ED8E009A3062 /* FamousPlaceDetail.swift */; };
@@ -61,6 +62,7 @@
 		556806A929730238004DD500 /* CheckInVN2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckInVN2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		556806AD29730238004DD500 /* CheckInVN2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVN2UITests.swift; sourceTree = "<group>"; };
 		556806AF29730238004DD500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55697C9A29979C7800DD2F25 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		556C5608297EE8E6009F0737 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		556C560A297EEA7F009F0737 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		557E2FD52994ED8E009A3062 /* FamousPlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamousPlaceDetail.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				5566DF3C298512D3009E9C0C /* MapView.swift */,
 				55AD5F7A2990894B00669E6B /* FamousPlace.swift */,
 				557E2FD52994ED8E009A3062 /* FamousPlaceDetail.swift */,
+				55697C9A29979C7800DD2F25 /* HomePage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				556C5609297EE8E6009F0737 /* UserListView.swift in Sources */,
 				55AD5F7B2990894B00669E6B /* FamousPlace.swift in Sources */,
 				55648BCA29769473006A49D7 /* CLUser.swift in Sources */,
+				55697C9B29979C7800DD2F25 /* HomePage.swift in Sources */,
 				556C560B297EEA7F009F0737 /* CircleImage.swift in Sources */,
 				5566DF4129851B93009E9C0C /* CLFamous.swift in Sources */,
 				5568069129730235004DD500 /* CheckInVN2App.swift in Sources */,
