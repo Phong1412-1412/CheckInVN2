@@ -53,7 +53,7 @@ struct SearchBox: View {
                     filteredFamousPlaces = viewModel.coorFamous
                 } else {
                     filteredFamousPlaces = viewModel.coorFamous.filter { famous in
-                        famous.name.localizedCaseInsensitiveContains(searchText)
+                        famous.name.localizedStandardContains(searchText)
                     }
                 }
         }
