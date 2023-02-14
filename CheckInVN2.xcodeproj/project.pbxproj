@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55614456299B7A93003C855C /* SearchBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55614455299B7A93003C855C /* SearchBox.swift */; };
 		55648BCA29769473006A49D7 /* CLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55648BC929769473006A49D7 /* CLUser.swift */; };
 		55648BCC2976953A006A49D7 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55648BCB2976953A006A49D7 /* ModelData.swift */; };
 		556572622976C38D00E9E08C /* CLProvince.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556572612976C38D00E9E08C /* CLProvince.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55614455299B7A93003C855C /* SearchBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBox.swift; sourceTree = "<group>"; };
 		55648BC929769473006A49D7 /* CLUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLUser.swift; sourceTree = "<group>"; };
 		55648BCB2976953A006A49D7 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		556572612976C38D00E9E08C /* CLProvince.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLProvince.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				557E2FD52994ED8E009A3062 /* FamousPlaceDetail.swift */,
 				55697C9A29979C7800DD2F25 /* HomePage.swift */,
 				5569DCAC299B251A005CE058 /* CardImage.swift */,
+				55614455299B7A93003C855C /* SearchBox.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				556C5609297EE8E6009F0737 /* UserListView.swift in Sources */,
 				55AD5F7B2990894B00669E6B /* FamousPlace.swift in Sources */,
 				5569DCAD299B251A005CE058 /* CardImage.swift in Sources */,
+				55614456299B7A93003C855C /* SearchBox.swift in Sources */,
 				55648BCA29769473006A49D7 /* CLUser.swift in Sources */,
 				55697C9B29979C7800DD2F25 /* HomePage.swift in Sources */,
 				556C560B297EEA7F009F0737 /* CircleImage.swift in Sources */,

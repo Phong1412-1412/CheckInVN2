@@ -16,7 +16,7 @@ struct HomePage: View {
                 
                 ZStack {
                     
-                    Text("Seasons").font(.title)
+                    Text("CKVN").font(.title)
                     
                     HStack(spacing: 18) {
                         
@@ -31,10 +31,14 @@ struct HomePage: View {
                         Spacer()
                         
                         Button(action: {
-                            
+                           
                         }) {
+                            NavigationLink(
+                                destination: SearchBox(id_province: 1),
+                                label: {
+                                    Image("search").renderingMode(.original)
+                                })
                             
-                            Image("search").renderingMode(.original)
                             
                         }
                         
