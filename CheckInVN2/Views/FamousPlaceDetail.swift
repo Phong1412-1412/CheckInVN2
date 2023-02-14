@@ -23,7 +23,7 @@ struct FamousPlaceDetail: View {
                     Text(famousPlace.name)
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     HStack {
-                        Text("Thuộc quốc gia")
+                        Text("Địa chỉ: \(famousPlace.address)")
                         .font(.title2)
                          Spacer()
                         Text("Việt Nam")
@@ -45,7 +45,7 @@ struct FamousPlaceDetail: View {
 struct FamousPlaceDetail_Previews: PreviewProvider {
     static var previews: some View {
         let coordinates = Famous.Coordinates(latitude: 37.7749, longitude: -122.4194)
-        let famousplace = Famous(id: 1, id_provice: 2, name: "San Francisco", description: "City by the Bay", image: "angiang", ischecked: 0, coordinates: coordinates)
+        let famousplace = Famous(id: 1, id_provice: 2, name: "San Francisco", description: "City by the Bay", address: "test" ,image: "angiang", ischecked: 0, coordinates: coordinates)
         FamousPlaceDetail(famousPlace: famousplace)
     }
 }

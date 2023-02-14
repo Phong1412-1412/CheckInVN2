@@ -20,6 +20,7 @@
 		556806A329730238004DD500 /* CheckInVN2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556806A229730238004DD500 /* CheckInVN2Tests.swift */; };
 		556806AE29730238004DD500 /* CheckInVN2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556806AD29730238004DD500 /* CheckInVN2UITests.swift */; };
 		55697C9B29979C7800DD2F25 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55697C9A29979C7800DD2F25 /* HomePage.swift */; };
+		5569DCAD299B251A005CE058 /* CardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569DCAC299B251A005CE058 /* CardImage.swift */; };
 		556C5609297EE8E6009F0737 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C5608297EE8E6009F0737 /* UserListView.swift */; };
 		556C560B297EEA7F009F0737 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C560A297EEA7F009F0737 /* CircleImage.swift */; };
 		557E2FD62994ED8E009A3062 /* FamousPlaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557E2FD52994ED8E009A3062 /* FamousPlaceDetail.swift */; };
@@ -63,6 +64,7 @@
 		556806AD29730238004DD500 /* CheckInVN2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVN2UITests.swift; sourceTree = "<group>"; };
 		556806AF29730238004DD500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55697C9A29979C7800DD2F25 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		5569DCAC299B251A005CE058 /* CardImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImage.swift; sourceTree = "<group>"; };
 		556C5608297EE8E6009F0737 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		556C560A297EEA7F009F0737 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		557E2FD52994ED8E009A3062 /* FamousPlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamousPlaceDetail.swift; sourceTree = "<group>"; };
@@ -97,10 +99,10 @@
 		55648BC82976944E006A49D7 /* ModelAPI */ = {
 			isa = PBXGroup;
 			children = (
+				5566DF4029851B93009E9C0C /* CLFamous.swift */,
 				55648BC929769473006A49D7 /* CLUser.swift */,
 				55648BCB2976953A006A49D7 /* ModelData.swift */,
 				556572612976C38D00E9E08C /* CLProvince.swift */,
-				5566DF4029851B93009E9C0C /* CLFamous.swift */,
 			);
 			path = ModelAPI;
 			sourceTree = "<group>";
@@ -116,6 +118,7 @@
 				55AD5F7A2990894B00669E6B /* FamousPlace.swift */,
 				557E2FD52994ED8E009A3062 /* FamousPlaceDetail.swift */,
 				55697C9A29979C7800DD2F25 /* HomePage.swift */,
+				5569DCAC299B251A005CE058 /* CardImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				55648BCC2976953A006A49D7 /* ModelData.swift in Sources */,
 				556C5609297EE8E6009F0737 /* UserListView.swift in Sources */,
 				55AD5F7B2990894B00669E6B /* FamousPlace.swift in Sources */,
+				5569DCAD299B251A005CE058 /* CardImage.swift in Sources */,
 				55648BCA29769473006A49D7 /* CLUser.swift in Sources */,
 				55697C9B29979C7800DD2F25 /* HomePage.swift in Sources */,
 				556C560B297EEA7F009F0737 /* CircleImage.swift in Sources */,

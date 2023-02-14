@@ -14,6 +14,7 @@ struct Famous: Hashable, Codable {
     var id_province: Int
     var name: String
     var description: String
+    var address: String
     private var image: String
     var ischecked: Int
     
@@ -28,11 +29,12 @@ struct Famous: Hashable, Codable {
                longitude: coordinates.longitude)
     }
     
-    init(id: Int, id_provice: Int, name: String, description: String, image: String, ischecked: Int, coordinates: Coordinates) {
+    init(id: Int, id_provice: Int, name: String, description: String, address: String , image: String, ischecked: Int, coordinates: Coordinates) {
         self.id = id
         self.id_province = id
         self.name = name
         self.description = description
+        self.address = address
         self.image = image
         self.ischecked = ischecked
         self.coordinates = coordinates

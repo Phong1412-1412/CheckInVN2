@@ -96,8 +96,13 @@ struct MainView : View {
                         
                         HStack {
                             
-                            Text("Tỉnh Thành")
-                            
+                            NavigationLink(
+                                destination: ProvinceView() ,
+                                label: {
+                                    Text("Tỉnh thành")
+                                })
+                                .navigationBarHidden(true)
+                                .navigationBarTitleDisplayMode(.inline)
                             Spacer()
                             
                             Image("down")
@@ -158,28 +163,33 @@ struct MainView : View {
 
 struct DetailsScroll : View {
     @StateObject var FamousModel = ViewModel()
+    var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     @State var show = false
     var body : some View {
-        
-        ScrollView(.vertical, showsIndicators: false) {
-            
-            VStack(spacing: 12) {
-                
-                ForEach(FamousModel.coorFamous, id: \.id) { famous in
-                    
-                    HStack {
-                        
-                            Cards(famousplace: famous)
-                            
+        NavigationView {
+                    ScrollView {
+                        LazyVGrid(columns: columns, spacing: 20) {
+                            ForEach(FamousModel.coorFamous, id: \.id) { famous in
+                                CardImage(famousPlace: famous)
+                                    .navigationTitle(Text("Địa danh"))
+                                    .toolbar {
+                                       NavigationLink(
+                                        destination: FamousPlaceDetail(famousPlace: famous),
+                                        label: {
+                                            Text("Chi tiết")
+                                        })
+                                    }
+                            }
+                        }
+                        .padding()
                     }
+           
                 }
-              
+                .navigationViewStyle(StackNavigationViewStyle())
+                .onAppear{
+                    FamousModel.fetchFamous()
+                }
             }
-        }
-        .onAppear{
-            FamousModel.fetchFamous()
-        }
-    }
 }
 
 struct Cards : View {
@@ -354,14 +364,5 @@ var sizes = ["S","M","X","XL"]
 
 var types = ["Top","HOT","Travle"]
 
-var datas = [
-    
-
-    type(id: 0,rows: [row(id:0,name: "Fit And Flare", price: "$299", image: "img1"),row(id:1,name: "Flexi Dress", price: "$160", image: "img2")]),
-
-    type(id: 2,rows: [row(id:0,name: "Summer Vibes", price: "$160", image: "img3"),row(id:1,name: "Flora Fun", price: "$200", image: "img4")]),
-
-]
-
 var coordinates = Famous.Coordinates(latitude: 37.7749, longitude: -122.4194)
-var famousplace = Famous(id: 1, id_provice: 2, name: "San Francisco", description: "City by the Bay", image: "angiang", ischecked: 0, coordinates: coordinates)
+var famousplace = Famous(id: 1, id_provice: 2, name: "San Francisco", description: "City by the Bay",address: "test" , image: "angiang", ischecked: 0, coordinates: coordinates)
