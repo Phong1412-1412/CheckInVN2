@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomePage: View {
+    @State private var isMenuShowing = false
     var body: some View {
         
         NavigationView {
@@ -19,7 +20,6 @@ struct HomePage: View {
                     Text("CKVN").font(.title)
                     
                     HStack(spacing: 18) {
-                        
                         Button(action: {
                             
                         }) {
@@ -41,22 +41,7 @@ struct HomePage: View {
                             
                             
                         }
-                        
-                        Button(action: {
-                            
-                        }) {
-                            
-                            Image("bell").renderingMode(.original)
-                            
-                        }
-                        
-                        Button(action: {
-                            
-                        }) {
-                            
-                            Image("bag").renderingMode(.original)
-                            
-                        }
+                    
                         
                     }
                     
@@ -344,6 +329,31 @@ struct rounded : Shape {
         return Path(path.cgPath)
     }
     
+}
+
+struct MenuView: View {
+    @Binding var isMenuShowing: Bool
+
+    var body: some View {
+        VStack {
+            Text("Menu Content")
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .padding()
+
+            Spacer()
+
+            Button(action: {
+                isMenuShowing.toggle()
+            }, label: {
+                Text("Close Menu")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding()
+            })
+        }
+        .background(Color.black.opacity(0.5))
+    }
 }
 
 struct type : Identifiable {

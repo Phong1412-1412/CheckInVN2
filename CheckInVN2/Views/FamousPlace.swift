@@ -23,7 +23,14 @@ struct FamousPlace: View {
                                     famous.imageName
                                         .resizable()
                                         .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                                    Text(famous.name)
+                                    VStack {
+                                        Text(famous.name)
+                                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    
+                                        Text(famous.address)
+                                            
+                                    }
+                                    
                       
                                 }
                             })
